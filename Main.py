@@ -46,6 +46,14 @@ print(k)
 
 # 8
 # Статистика
+from itertools import product
+ans = 0
+s = "123"  # исходная строка
+a = list(product(s, repeat=5))  # длина комбинации
+for i in range(len(a)):
+    if a[i][0] == "1":  # условие
+        ans += 1
+print(ans)
 
 # 9
 # Эксель
